@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrickingLibrary.Api", "TrickingLibrary.Api\TrickingLibrary.Api.csproj", "{F422D9D1-CB48-4A45-A126-42A3DBCA72B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{12CB3D95-82F1-4A44-8ECB-39DB5B006D5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{CF31E428-7B19-4871-AB6D-7D33AC0C19C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F422D9D1-CB48-4A45-A126-42A3DBCA72B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F422D9D1-CB48-4A45-A126-42A3DBCA72B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F422D9D1-CB48-4A45-A126-42A3DBCA72B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F422D9D1-CB48-4A45-A126-42A3DBCA72B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF31E428-7B19-4871-AB6D-7D33AC0C19C2} = {12CB3D95-82F1-4A44-8ECB-39DB5B006D5D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7979E7BF-AB63-4C0B-8A4A-3559FE1E3ADA}
+	EndGlobalSection
+EndGlobal
