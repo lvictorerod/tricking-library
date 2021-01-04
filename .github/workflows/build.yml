@@ -1,5 +1,5 @@
 name: build-tricking-library
-
+ 
 # Run this workflow every time a new commit pushed to your repository
 on: push
 
