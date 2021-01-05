@@ -22,5 +22,7 @@ jobs:
         run: ls
       - name: Check Dotnet Cli
         run: dotnet
+      - name: List Files in Directory
+        run: ls TrickingLibrary.Api/ -R
       - name: Check NPM Cli
-        run: npm
+        run: npm -v
