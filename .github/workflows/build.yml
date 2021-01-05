@@ -1,4 +1,4 @@
-name: build-tricking-library
+name: Build My Application tricking-library
  
 # Run this workflow every time a new commit pushed to your repository
 on: push
@@ -6,13 +6,15 @@ on: push
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
-  super-lint:
+  build:
     # Name the Job
-    name: Build Tricking Library code base
+    name: Build our App
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
     steps:
+      - name: Pull Code      
+        uses: actions/checkout@v2
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Print Current Directory
         run: pwd
