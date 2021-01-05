@@ -15,22 +15,30 @@ jobs:
     steps:
       - name: Pull Code      
         uses: actions/checkout@v2 # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Setup .NET 5
+      
+      - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '5.0.1' # SDK Version to use.
-      - name: Check Dotnet Cli
-        run: dotnet
-      - name: Print Current Directory
-        run: pwd
-      - name: List Files in Directory
-        run: ls
+          dotnet-version: '5.0.100'
+
       - name: Install dependencies
         run: dotnet restore
+
       - name: Build
-        run: dotnet build 
+        run: dotnet build --configuration Release --no-restore
+
+      #- name: Test
+      #  run: dotnet test --no-restore --verbosity normal
+
+      - name: Print Current Directory
+        run: pwd
+
+      - name: List Files in Directory
+        run: ls
+    
       - name: Check NPM Cli
         run: npm -v
+
       - name: List Files in Directory
         run: ls TrickingLibrary.Api/ -R
     
