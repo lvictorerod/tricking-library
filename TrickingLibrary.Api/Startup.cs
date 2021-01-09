@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrickingLibrary.Api.Models;
 
 namespace TrickingLibrary.Api
 {
@@ -28,6 +29,9 @@ namespace TrickingLibrary.Api
         {
 
             services.AddControllers();
+
+            services.AddSingleton<TrickyStore>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TrickingLibrary.Api", Version = "v1" });
